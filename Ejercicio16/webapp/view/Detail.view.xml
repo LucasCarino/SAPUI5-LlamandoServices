@@ -1,0 +1,38 @@
+<mvc:View 
+xmlns:f="sap.ui.layout.form"
+xmlns:l="sap.ui.layout"
+controllerName="Ejercicio16.Ejercicio16.controller.Detail" 
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true" 
+xmlns="sap.m">
+    <Page id="page" title="{i18n>TitleDetail} {OrderModel>/OrderID}" showNavButton="true" navButtonPress="onNavBack">
+        <f:SimpleForm editable="false" >
+            <f:content>
+                <Label text="{i18n>OrderID}" />
+                <Text text="{OrderModel>/OrderID}" />
+                <Label text="{i18n>CustomerID}" />
+                <Text text="{OrderModel>/CustomerID}" />
+                <Label text="{i18n>EmployeeID}" />
+                <Text text="{OrderModel>/EmployeeID}" />
+                <Label text="{i18n>OrderDate}" />
+                <Text text="{OrderModel>/OrderDate}" />
+                <Label text="{i18n>RequiredDate}" />
+                <Text text="{OrderModel>/RequiredDate}" />
+                <Label text="{i18n>ShipVia}" />
+                <Text text="{OrderModel>/ShipVia}" />
+                <Label text="{i18n>ShipName}" />
+                <Text text="{OrderModel>/ShipName}" />
+                <Label text="{i18n>ShipAdress}" />
+                <Text text="{OrderModel>/ShipAddress}" />
+                <Label text="{i18n>ShipCity}" />
+                <Text text="{OrderModel>/ShipCity}" />
+                <Label text="{i18n>ShipRegion}" />
+                <Text text="{OrderModel>/ShipRegion}" />
+                <Label text="{i18n>ShipPostalCode}" />
+                <Text text="{OrderModel>/ShipPostalCode}" />
+                <Label text="{i18n>ShipCountry}" />
+                <Text text="{OrderModel>/ShipCountry}" />
+            </f:content>
+        </f:SimpleForm>
+    </Page>
+</mvc:View>

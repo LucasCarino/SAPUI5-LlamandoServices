@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Ejercicio16-Ejercicio16",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/ejercicio16-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/Ejercicio16Ejercicio16/index.html",
+        "--ui5",
+        "{\"version\":\"1.84.9\"}"
+      ],
+      "cwd": "${workspaceFolder}/Ejercicio16",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/Ejercicio16/Ejercicio16\"}"
+      },
+      "envFile": "${workspaceFolder}/Ejercicio16/.env1",
+      "preLaunchTask": "Build Ejercicio16"
+    },
+    {
+      "name": "Run Ejercicio16-Ejercicio16",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/ejercicio16-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/Ejercicio16Ejercicio16/index.html",
+        "--ui5",
+        "{\"version\":\"1.84.9\"}"
+      ],
+      "cwd": "${workspaceFolder}/Ejercicio16",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/Ejercicio16/Ejercicio16\"}"
+      },
+      "envFile": "${workspaceFolder}/Ejercicio16/.env2",
+      "preLaunchTask": "Build Ejercicio16"
+    }
+  ]
+}

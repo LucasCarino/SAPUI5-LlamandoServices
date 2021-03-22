@@ -1,0 +1,49 @@
+<mvc:View controllerName="Ejercicio16.Ejercicio16.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table 
+                headerText="{i18n>MainTitle}"
+                selectionChange="onSelectOrder"
+                mode="SingleSelectMaster"
+                items="{OrderDetailsModel>/value}"
+                >
+                <columns>
+                    <Column>
+                        <Text text="{i18n>ColumnOrderNumber}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>ColumnIDProduct}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>ColumnUnitPrice}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>ColumnQuantity}" />
+                    </Column>
+                    <Column>
+                        <Text text="{i18n>ColumnDiscount}" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{OrderDetailsModel>OrderID}" />
+                        </cells>
+                        <cells>
+                            <Text text="{OrderDetailsModel>ProductID}" />
+                        </cells>
+                        <cells>
+                            <Text text="{OrderDetailsModel>UnitPrice}" />
+                        </cells>
+                        <cells>
+                            <Text text="{OrderDetailsModel>Quantity}" />
+                        </cells>
+                        <cells>
+                            <Text text="{OrderDetailsModel>Discount}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
